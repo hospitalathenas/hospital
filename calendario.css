@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --azul-escuro:#3994C8; /*cor do botão*/
+    --azul-claro:#AEE2FF; /*cor do fundo da tela de login*/
+    --teal-050: #effcf6;
+  --teal-100: #c6f7e2;
+  --teal-200: #8eedc7;
+  --teal-300: #65d6ad;
+  --teal-400: #3ebd93;
+  --teal-500: #27ab83;
+  --teal-600: #199473;
+  --teal-700: #147d64;
+  --teal-800: #0c6b58;
+  --teal-900: #014d40;
+
+  --blue-grey-050: #f0f4f8;
+  --blue-grey-100: #d9e2ec;
+  --blue-grey-200: #bcccdc;
+  --blue-grey-300: #9fb3c8;
+  --blue-grey-400: #829ab1;
+  --blue-grey-500: #627d98;
+  --blue-grey-600: #486581;
+  --blue-grey-700: #334e68;
+  --blue-grey-800: #243b53;
+  --blue-grey-900: #102a43;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0 0 0;
+  gap: 55%;
+}
+
+.enquadramento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+
+
+.logout-btn {
+  background-color: #3994C8;
+  color: white;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  padding: 5%;
+  border-radius: 50px;
+}
+
+.container-usuario {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  border-radius: 30px;
+  background: rgba(57, 148, 200, 0.31);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 0 100% 0 3%;
+}
+
+.container-usuario img {
+  width: 100%;
+  padding: 1% 0 1% 0;
+}
+
+.container-usuario p {
+  font-size: 150%;
+  font-weight: bolder;
+  font-family: 'Inter', sans-serif;
+  color: #3994C8;
+}
+
+.container-icons {
+  display: flex;
+  column-gap: 70px;
+  align-items: center;
+}
+
+.tarefaicon {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 8px 0;
+}
+
+.linha {
+    background: rgba(57, 148, 200, 0.31);
+    width: 100%;
+    height: 5px;
+    margin: 2% 0 0 0;
+}
+
+.tarefas-box {
+    display: flex;
+    align-items: center;
+    gap: 43%;
+    justify-content: center;
+    margin: 1.5% 0 2% 0;
+}
+
+.tarefas-box p {
+    background-color: #3994C8;
+    color: white;
+    font-size: 200%;
+    padding: 1% 12% 1% 12%;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-procurar-tarefas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}   
+
+.input-search {
+    float: left;
+    border-radius: 30px;
+    background: rgba(57, 148, 200, 0.31);
+    color: #3994C8;
+    outline-color: #3994C8;
+    padding: 5% 10% 5% 10%;
+    font-size: 150%;
+    border: none;
+    width: 100%;
+}
+
+.input-search::placeholder {
+    color: #3994C8;
+}
+
+.lupa-icon {
+    position: absolute;
+    margin: 0 0 0 230px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 3% 0 5% 0;
+}
+
+
+.calendar {
+    background-color: rgba(216, 254, 250, 0.44);
+    width: 95%;
+    border-radius: 50px;
+    margin: 0 0 3% 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.color-calendar {
+    background-color: var(--azul-escuro);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 0 0;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.days-container {
+    display: flex;
+    padding: 3%  0 0 0;
+}
+
+.month-indicator {
+    color: var(--blue-grey-700);
+    text-align: center;
+    padding: 1% 0 0 0;
+    display: flex;
+    gap: 350px;
+}
+  
+  
+  .day-of-week,
+  .date-grid {
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    margin: 0 0 3% 0;
+}
+  
+  
+  .day-of-week {
+    margin-top: 1.25em;
+    gap: 2%;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .day-of-week > * {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+  }
+  
+  /* Dates */
+  .date-grid {
+    margin-top: 0.5em;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  
+  .btn-class {
+    position: relative;
+    border: 0;
+    width: 6rem;
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: #acf2ea;
+    color: black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-class:hover,
+  .btn-class:focus {
+    outline: none;
+    background-color: var(--blue-grey-050);
+    color: var(--blue-grey-700);
+  }
+  
+  .btn-class:active,
+  .btn-class.is-selected {
+    background-color: var(--teal-100);
+    color: var(--teal-900);
+  }
+
+  .in-btn-class {
+    position: relative;
+    border: 0;
+    width: 6rem;
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: rgba(216, 254, 250, 0.40);
+    color: rgba(68, 68, 68, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .title-mes {
+    font-size: 3em;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+  }
+
+  .arrow-icon {
+    width: 4rem;
+  }
+
+
+  .tarefas {
+    display: flex;
+    width: 20%;
+    background-color: var(--azul-escuro);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5% 0 1% 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .tarefas-camada2 {
+    background-color: rgba(216, 254, 250, 0.44);
+    width: 80%;
+    height: 2rem;
+    padding: 3% 0 3% 0;
+    margin: 0 0 9% 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .bolinha {
+    background-color: var(--azul-claro);
+    border-radius: 50px;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 0 20% 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
